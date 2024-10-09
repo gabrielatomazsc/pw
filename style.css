@@ -12,6 +12,10 @@ body {
   background-color: #fff9ea;
 }
 
+section {
+  padding: 28px 8%;
+}
+
 .btn-default {
   color: #fff;
   border: none;
@@ -25,10 +29,34 @@ body {
   box-shadow: 8px 0px 10px 2px rgba(0, 0, 0, 0.1);
 }
 
-.btn-default:hover {
+.btn-default :hover {
   color: #fff;
   background-color: #7F055F;
   transform: scale(1.1);
+}
+
+.social-media-buttons {
+  display: flex;
+  gap: 18px;
+}
+
+.social-media-buttons a {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 45px;
+  height: 40px;
+  background-color: #fff;
+  font-size: 1.25rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #1d1d1d;
+  box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow .3s ease;
+}
+
+.social-media-buttons a:hover {
+  box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
 }
   
 /*Cabeçalho*/
@@ -46,7 +74,6 @@ header {
 
 #navlogo {
   width: 100px;
-  
 }
 
 .nav_list {
@@ -111,4 +138,112 @@ header {
     text-align: center;
 }
 }
+
+/*Home*/
+
+#home {
+  display: flex;
+  min-height: calc(100vh - 91px);
+  position: relative;
+}
+
+#cta {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-top: 5%;
+}
+
+#cta .title {
+  font-size: 4rem;
+  color: #1d1d1d
+}
+
+#cta .title span {
+  font-size: 4rem;
+  color: #e9a209
+}
+
+#cta .description {
+  font-size: 1.2rem;
+}
+
+#cta_buttons {
+  display: flex;
+  gap: 24px;
+}
+
+#cta_buttons a {
+  text-decoration: none;
+  color: #1d1d1d
+}
+
+#phone_button { 
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 8px 14px;
+  font-weight: 500;
+  box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+}
+
+#phone_button button {
+  box-shadow: none;
+}
+
+#banner {
+  display: flex;
+  align-items: start; 
+  justify-content: end;
+  width: 70%;
+  z-index: 2;
+}
+
+#banner img {
+  height: 520px;
+  width: fit-content;
+}
+
+.shape {
+  background-color: #ffe8b4;
+  width: 50%;
+  height: 78%;
+  position: absolute;
+  border-radius: 40% 30% 0% 20%;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1170px) {
+  #home{
+    height: 100%;
+    padding-top: 0px;
+  }
+
+  #banner,
+  #banner img,
+  #home .shape {
+    display: none;
+
+  }
+
+  #cta {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  
+}
+
+@media screen and (max-width: 450px) {
+  #phone_button button {
+    display: none;
+  }
+
+} 
+
+
 
