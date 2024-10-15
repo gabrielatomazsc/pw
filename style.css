@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
 
 /* GERAL*/
 * {
@@ -16,20 +17,33 @@ section {
   padding: 28px 8%;
 }
 
+.section-title {
+  color: #7F055F;
+  font-size: 38px;
+  text-align: center;
+}
+
+.section-subtitle {
+  color: #b4afb2;
+  font-size: 18px;
+  text-align: center;
+}
+
+
 .btn-default {
   color: #fff;
   border: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e1e1e1;
+  background-color: #b4afb2;
   border-radius: 12px;
-  padding: 10px 14px;
+  padding: 10px 18px;
   font-weight: 600;
   box-shadow: 8px 0px 10px 2px rgba(0, 0, 0, 0.1);
 }
 
-.btn-default :hover {
+.btn-default:hover {
   color: #fff;
   background-color: #7F055F;
   transform: scale(1.1);
@@ -79,7 +93,7 @@ header {
 .nav_list {
   display: flex;
   list-style: none;
-  gap: 48px;
+  gap: 128px;
 }
 
 #nav-item a {
@@ -137,6 +151,8 @@ header {
     list-style: none;
     text-align: center;
 }
+
+
 }
 
 /*Home*/
@@ -148,19 +164,21 @@ header {
 }
 
 #cta {
-  width: 35%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 28px;
-  margin-top: 5%;
+  margin: 10%;
 }
 
 #cta .title {
+  font-family: "Nerko One", cursive;
   font-size: 3rem;
   color: #1d1d1d;
 }
 
 #cta .title span {
+  font-family: "Nerko One", cursive;
   font-size: 3rem;
   color: #7F055F;
 }
@@ -181,7 +199,6 @@ header {
 
 #phone_button { 
   display: flex;
-  gap: 8px;
   align-items: center;
   background-color: #ffffff;
   padding: 8px 14px;
@@ -196,19 +213,17 @@ header {
 
 #banner {
   display: flex;
-  align-items: start; 
-  justify-content: end;
+  align-items: justify; 
   width: 70%;
   z-index: 2;
 }
 
 #banner img {
-  height: 480px;
+  height: 400px;
   /*width: fit-content;*/
   position: relative;
-  top: -10px;
-  left: 40px;
   width: auto;
+  margin-top: 15%;
 }
 
 .shape {
@@ -220,6 +235,7 @@ header {
   top: 0;
   right: 0;
   z-index: 1;
+  
 }
 
 @media screen and (max-width: 1170px) {
@@ -250,5 +266,27 @@ header {
 
 } 
 
+/*Cabeçalho*/
 
+#menu {
+  min-height: calc(100vh - 91px);
+}
 
+#menu .looks {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap; 
+}
+
+.look-heart {
+  border: 2px solid #7F055F;
+  border-radius: 50px;
+  padding: 40px;
+  margin-top: 45px;
+  width: 25%;
+  transition: .2s;
+}
+
+.look-heart img{
+ height: 450px;
+}
