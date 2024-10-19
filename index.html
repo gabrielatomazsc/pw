@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JVM</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -15,14 +16,11 @@
             <img id="navlogo" src="img/logojvm.png" alt="">
 
             <ul class="nav_list">
-                <li id="nav-item">
+                <li class="nav-item active">
                     <a href="#home">Início</a>
                 </li>
-                <li id="nav-item">
-                    <a href="#about">Sobre</a>
-                </li>
-                <li id="nav-item">
-                    <a href="#products">Produtos</a>
+                <li class="nav-item">
+                    <a href="#catalogo">Catálogo</a>
                 </li>
             </ul>
             <button class="btn-default"> Contate-nos </button>
@@ -32,14 +30,11 @@
 
             <div id="mobile-menu">
                 <ul class="mobile-nav_list">
-                    <li id="nav-item">
-                        <a href="#home">Início</a>
+                    <li class="nav-item">
+                        <a href="#inicio">Início</a>
                     </li>
-                    <li id="nav-item">
-                        <a href="#about">Sobre</a>
-                    </li>
-                    <li id="nav-item">
-                        <a href="#products">Produtos</a>
+                    <li class="nav-item">
+                        <a href="#catalogo">Catálogo</a>
                     </li>
                 </ul>
                 <button class="btn-default"> Contate-nos </button>
@@ -50,29 +45,29 @@
         <section id="home">
             <div class="shape"></div>
             <div id="cta">
-                <h1 class="title">
+                <h1 id="inicio" class="title">
                     O estilo que vai até <br>
                     <span>você</span>.
                 </h1>
 
                 <p class="description">
-                    Lorem ipsum dolor 
+                Compre pelo site ou Whatsapp, entregamos por todo o Brasil<span>!</span>
                 </p>
 
                 <div id="cta_buttons">
-                    <a href="#" class="btn-default">
+                    <a href="#catalogo" class="btn-default">
                        Ver catálogo
                     </a>
 
-                    <a href="tel:+55 992483823" id="phone_button">
+                    <a href="https://contate.me/jvm-modas" id="phone_button">
                         <button class="btn-default">
                             <i class="fa-solid fa-phone"></i>
-                        </button> +55 (35) 992483823
+                        </button> +55 (11) 9869428881
                     </a>
                 </div>
 
                 <div class="social-media-buttons">
-                    <a href="">
+                    <a href="https://contate.me/jvm-modas">
                         <i class="fa-brands fa-whatsapp"></i>
                     </a>
     
@@ -80,9 +75,6 @@
                         <i class="fa-brands fa-instagram"></i>
                     </a>
     
-                    <a href="">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
                 </div>
             </div>
 
@@ -92,14 +84,16 @@
         </section>
 
         <section id="menu">
-            <h2 class="section-title">Catálogo</h2>
-            <h3 class="section-subtitle">Nossos looks da estação</h3>
+            <h2 id="catalogo" class="section-title">Catálogo</h2>
+            <h3 class="section-subtitle">Moda primavera-verão</h3>
 
             <div id="looks">
                 <div class="look">
                     <div class="look-heart">
-                        <img src="img/Capturar.PNG" alt="">
+                        <i class="fa-solid fa-heart"></i>
+                    </div> 
 
+                        <img src="img/look1.PNG" alt="" class="look-image">
                         <h3 class="look-title">
                             Vestido Carolina
                         </h3>
@@ -123,48 +117,22 @@
                                 <i class="fa-solid fa-basket-shopping"></i>
                             </button>
                         </div>
-                    </div>
-
-                <div class="look">
-                    <img src="" class="look-heart" alt="">
-
-                    <h3 class="look-title">
-                        Lorem Ipsum
-                    </h3>
-
-                    <span class="look-description">
-                        Lorem ipsum dolor sit
-                    </span>
-
-                    <div class="look-rate">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <span>(500+)</span>
-                    </div>
-
-                    <div class="look-price">
-                        <h4>R$115,00</h4>
-                        <button class="btn-default">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                        </button>
-                    </div>
                 </div>
 
-                <div id="looks">
-                    <div class="look">
-                        <img src="" class="look-heart" alt="">
+                <div class="look">
+                    <div class="look-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div> 
 
+                        <img src="img/look2.PNG" alt="" class="look-image">
                         <h3 class="look-title">
-                            Lorem Ipsum
+                            Vestido Carolina
                         </h3>
-
+    
                         <span class="look-description">
                             Lorem ipsum dolor sit
                         </span>
-
+    
                         <div class="look-rate">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -173,102 +141,259 @@
                             <i class="fa-solid fa-star"></i>
                             <span>(500+)</span>
                         </div>
-
+    
                         <div class="look-price">
                             <h4>R$115,00</h4>
                             <button class="btn-default">
                                 <i class="fa-solid fa-basket-shopping"></i>
                             </button>
                         </div>
-                    </div>
-
-                    <div id="looks">
-                        <div class="look">
-                            <img src="" class="look-heart" alt="">
-
-                            <h3 class="look-title">
-                                Lorem Ipsum
-                            </h3>
-        
-                            <span class="look-description">
-                                Lorem ipsum dolor sit
-                            </span>
-        
-                            <div class="look-rate">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <span>(500+)</span>
-                            </div>
-        
-                            <div class="look-price">
-                                <h4>R$115,00</h4>
-                                <button class="btn-default">
-                                    <i class="fa-solid fa-basket-shopping"></i>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="look">
-                            <img src="" class="look-heart" alt="">
-                            <h3 class="look-title">
-                                Lorem Ipsum
-                            </h3>
-        
-                            <span class="look-description">
-                                Lorem ipsum dolor sit
-                            </span>
-        
-                            <div class="look-rate">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <span>(500+)</span>
-                            </div>
-        
-                            <div class="look-price">
-                                <h4>R$115,00</h4>
-                                <button class="btn-default">
-                                    <i class="fa-solid fa-basket-shopping"></i>
-                                </button>
-                            </div>
-
-                            <div class="look">
-                                <img src="" class="look-heart" alt="">
-
-                                <h3 class="look-title">
-                                    Lorem Ipsum
-                                </h3>
-            
-                                <span class="look-description">
-                                    Lorem ipsum dolor sit
-                                </span>
-            
-                                <div class="look-rate">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <span>(500+)</span>
-                                </div>
-            
-                                <div class="look-price">
-                                    <h4>R$115,00</h4>
-                                    <button class="btn-default">
-                                        <i class="fa-solid fa-basket-shopping"></i>
-                                    </button>
-                                </div>
-
                 </div>
-                    </div>
+                
+                <div class="look">
+                    <div class="look-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div> 
+
+                        <img src="img/look3.PNG" alt="" class="look-image">
+                        <h3 class="look-title">
+                            Vestido Carolina
+                        </h3>
+    
+                        <span class="look-description">
+                            Lorem ipsum dolor sit
+                        </span>
+    
+                        <div class="look-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+    
+                        <div class="look-price">
+                            <h4>R$115,00</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+                </div>
+
+                <div class="look">
+                    <div class="look-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div> 
+
+                        <img src="img/look4.PNG" alt="" class="look-image">
+                        <h3 class="look-title">
+                            Vestido Carolina
+                        </h3>
+    
+                        <span class="look-description">
+                            Lorem ipsum dolor sit
+                        </span>
+    
+                        <div class="look-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+    
+                        <div class="look-price">
+                            <h4>R$115,00</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+                </div>
+
+                <div class="look">
+                    <div class="look-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div> 
+
+                        <img src="img/look5.PNG" alt="" class="look-image">
+                        <h3 class="look-title">
+                            Vestido Carolina
+                        </h3>
+    
+                        <span class="look-description">
+                            Lorem ipsum dolor sit
+                        </span>
+    
+                        <div class="look-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+    
+                        <div class="look-price">
+                            <h4>R$115,00</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+                </div>
+
+                <div class="look">
+                    <div class="look-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div> 
+
+                        <img src="img/look6.PNG" alt="" class="look-image">
+                        <h3 class="look-title">
+                            Vestido Carolina
+                        </h3>
+    
+                        <span class="look-description">
+                            Lorem ipsum dolor sit
+                        </span>
+    
+                        <div class="look-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+    
+                        <div class="look-price">
+                            <h4>R$115,00</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+                </div>
+
+                <div class="look">
+                    <div class="look-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div> 
+
+                        <img src="img/look7.PNG" alt="" class="look-image">
+                        <h3 class="look-title">
+                            Vestido Carolina
+                        </h3>
+    
+                        <span class="look-description">
+                            Lorem ipsum dolor sit
+                        </span>
+    
+                        <div class="look-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+    
+                        <div class="look-price">
+                            <h4>R$115,00</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+                </div>
+
+                <div class="look">
+                    <div class="look-heart">
+                        <i class="fa-solid fa-heart" class="look-image"></i>
+                    </div> 
+
+                        <img src="img/look8.PNG" alt="" class="look-image">
+                        <h3 class="look-title">
+                            Vestido Carolina
+                        </h3>
+    
+                        <span class="look-description">
+                            Lorem ipsum dolor sit
+                        </span>
+    
+                        <div class="look-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+    
+                        <div class="look-price">
+                            <h4>R$115,00</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+                </div>
+
+                <div class="look">
+                    <div class="look-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div> 
+
+                        <img src="img/look9.PNG" alt="" class="look-image">
+                        <h3 class="look-title">
+                            Vestido Carolina
+                        </h3>
+    
+                        <span class="look-description">
+                            Lorem ipsum dolor sit
+                        </span>
+    
+                        <div class="look-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+    
+                        <div class="look-price">
+                            <h4>R$115,00</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+                </div>
+            </div>
         </section>
-       
+
+        <section id="contato">
+            
+        </section>
     </main>
+
+    <footer>
+        <img src="img/wave.svg" alt="" id="img">
+
+        <div id="footer-itens">
+            <span id="copyright">
+                &copy 2024 Gabriela Tomaz, Ana Perchack, Vinicius Alves
+            </span>
+
+            <div class="social-media-buttons">
+                <a href="">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
