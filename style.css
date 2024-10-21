@@ -19,16 +19,14 @@ section {
 
 .section-title {
   color: #7F055F;
-  font-size: 38px;
+  font-size: 35px;
   text-align: center;
-  padding-bottom: 10px;
 }
 
 .section-subtitle {
   color: #b4afb2;
   font-size: 18px;
   text-align: center;
-  padding-bottom: 10px;
 }
 
 .btn-default {
@@ -428,4 +426,51 @@ footer  {
     flex-direction: column;
     gap: 20px;
   }
+}
+
+/*Formulário*/
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+form input, form textarea {
+  width: 100%;
+  background-color: #b4afb275;
+  border: 0;
+  outline: 0;
+  padding: 20px 15px;
+  color: #1d1d1d;
+  border-radius: 15px;
+  font-size: 18px;
+}
+
+form textarea {
+  resize: none;
+  max-height: 200px;
+}
+
+form .btn-enviar {
+  margin-top: 20px;
+  text-align: center;
+}
+
+form .btn-enviar input {
+  width: 120px;
+  color: #fff;
+  background-color: #7F055F;
+  font-weight: 700;
+  transition: .2s;
+  cursor: pointer;
+}
+
+.btn-enviar input:hover {
+  box-shadow: 0px 0px 8px #7F055F;
+  transform: scale(1.09);
 }

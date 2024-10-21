@@ -1,9 +1,16 @@
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('scroll-btn').addEventListener('click', function() {
+        document.getElementById('contact').scrollIntoView();
+    });
+});
+
+
 $(document).ready(function(){
     $('#mobile-btn').on('click', function(){
         $('#mobile-menu').toggleClass('active');
         ('#mobile-btn').find('i').toggleClass('fa-x');
     });
-
+    
     const sections = $('section');
     const navItens = $('.nav-item');
 
@@ -48,3 +55,4 @@ $(document).ready(function(){
         distance: '20%'
     })
 });
+
