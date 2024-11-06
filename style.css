@@ -293,6 +293,47 @@ header {
   }
 }
 
+/*Sobre*/
+
+section #sobre { 
+  min-height: calc(100vh - 91px);
+}
+
+section #sobre-nos {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+#sobre-nos .img-sobre img{
+  height: 550px;
+  padding: 30px;
+}
+
+#sobre-nos .txt-sobre {
+  flex: 1; 
+}
+
+#sobre-nos .txt-sobre h2 {
+  color: #b4afb2;
+  font-size: 35px;
+}
+
+#sobre-nos .txt-sobre h2 span {
+  color: #7F055F;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+#sobre-nos .txt-sobre p {
+  margin: 20px 0;
+  padding: 20px;
+  text-align: justify;
+  color: #1d1d1d;
+  line-height: 30px;
+}
+
 
 /*Menu*/
 
