@@ -2,6 +2,9 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('scroll-btn').addEventListener('click', function() {
         document.getElementById('contact').scrollIntoView();
     });
+    document.getElementById('scroll-btn-mobile').addEventListener('click', function() {
+        document.getElementById('contact').scrollIntoView();
+    });
 });
 
 

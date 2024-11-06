@@ -334,6 +334,11 @@ section #sobre-nos {
   line-height: 30px;
 }
 
+@media screen and (max-width: 1170px) {
+  .img-sobre {
+    display: none;
+  }
+}
 
 /*Menu*/
 
